@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  OneViewController.m
 //  UIGR
 //
 //  Created by 牛高航 on 15/7/29.
 //  Copyright (c) 2015年 牛高航. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "OneViewController.h"
-@interface ViewController ()
+#import "ViewController.h"
+@interface OneViewController ()
 
 @end
 
-@implementation ViewController
+@implementation OneViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     [self.view setBackgroundColor:[UIColor whiteColor]];
@@ -24,16 +24,27 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
-
+    
 }
 - (void)push
 {
-    OneViewController *VC = [[OneViewController alloc] init];
+    ViewController *VC = [[ViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

@@ -14,6 +14,8 @@
 		4F89FC7C1B6866F900163BAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F89FC7B1B6866F900163BAD /* Images.xcassets */; };
 		4F89FC7F1B6866F900163BAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F89FC7D1B6866F900163BAD /* LaunchScreen.xib */; };
 		4F89FC8B1B6866F900163BAD /* UIGRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89FC8A1B6866F900163BAD /* UIGRTests.m */; };
+		4F89FC961B686A7A00163BAD /* XXYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89FC951B686A7A00163BAD /* XXYNavigationController.m */; };
+		4F89FC991B686B8200163BAD /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89FC981B686B8200163BAD /* OneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		4F89FC841B6866F900163BAD /* UIGRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIGRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F89FC891B6866F900163BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F89FC8A1B6866F900163BAD /* UIGRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIGRTests.m; sourceTree = "<group>"; };
+		4F89FC941B686A7A00163BAD /* XXYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXYNavigationController.h; sourceTree = "<group>"; };
+		4F89FC951B686A7A00163BAD /* XXYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXYNavigationController.m; sourceTree = "<group>"; };
+		4F89FC971B686B8200163BAD /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		4F89FC981B686B8200163BAD /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				4F89FC731B6866F900163BAD /* AppDelegate.m */,
 				4F89FC751B6866F900163BAD /* ViewController.h */,
 				4F89FC761B6866F900163BAD /* ViewController.m */,
+				4F89FC971B686B8200163BAD /* OneViewController.h */,
+				4F89FC981B686B8200163BAD /* OneViewController.m */,
+				4F89FC941B686A7A00163BAD /* XXYNavigationController.h */,
+				4F89FC951B686A7A00163BAD /* XXYNavigationController.m */,
 				4F89FC781B6866F900163BAD /* Main.storyboard */,
 				4F89FC7B1B6866F900163BAD /* Images.xcassets */,
 				4F89FC7D1B6866F900163BAD /* LaunchScreen.xib */,
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F89FC771B6866F900163BAD /* ViewController.m in Sources */,
+				4F89FC991B686B8200163BAD /* OneViewController.m in Sources */,
+				4F89FC961B686A7A00163BAD /* XXYNavigationController.m in Sources */,
 				4F89FC741B6866F900163BAD /* AppDelegate.m in Sources */,
 				4F89FC711B6866F900163BAD /* main.m in Sources */,
 			);
@@ -347,7 +359,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UIGR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +371,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UIGR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
